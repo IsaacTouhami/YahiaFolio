@@ -24,6 +24,8 @@ body{
     align-items: center;
     background: #0f0e0e;
     margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }   
 header{
     background-color: #272525; 
@@ -148,6 +150,8 @@ section{
     color: var(--secondary-color);
     font-family: Nunito,sans-serif;
     transition:var(--transition);
+    flex-grow: 1;
+
 }
 section div{
     margin-bottom:100px ;
@@ -270,6 +274,7 @@ section div{
     align-items: center;
     color: var(--secondary-color);
     font-family: 'Nunito', sans-serif;
+    flex-grow: 1;
   }
   
   #contact h1 {
@@ -332,9 +337,7 @@ transition: var(--transition);
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     width: 100%;
-    margin-top: 30px;
     min-height: 100px;
     font-family: “Times New Roman”, Times, serif;
     background-color: #272525;
