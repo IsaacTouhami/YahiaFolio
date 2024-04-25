@@ -54,15 +54,8 @@ header:hover{
     font-weight: bold;
     gap: 15px;
     margin: 2px;
+    color: var(--primary-color);
     transition:var(--transition);
-}
-.logo:hover{
-
-    text-shadow: 0 0 10px var(--primary-color);
-}
-.logo:hover img{
-    border: solid 4px var(--primary-color);
-    box-shadow: 0 0 10px var(--primary-color);
 }
 
 .logo img{
@@ -70,8 +63,46 @@ header:hover{
     height: 120px;
     border: solid 4px var(--secondary-color);
     object-fit: cover;
+    border: solid 4px var(--primary-color);
     border-radius: 50%;
     transition:var(--transition);
+}
+ .logo img{
+  animation-name: glow1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+@keyframes glow1{
+  0%{
+    box-shadow: 0 0 10px var(--primary-color);
+  }
+  50%{
+    box-shadow: 0 0 30px var(--primary-color);
+  }
+  100%{
+    box-shadow: 0 0 10px var(--primary-color);
+  }
+}
+.logo{
+  animation-name: glow2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+/*text shadow keyframe*/
+@keyframes glow2{
+  0%{
+    text-shadow: 0 0 10px var(--primary-color);
+  }
+  50%{
+    text-shadow: 0 0 30px var(--primary-color);
+  }
+  100%{
+    text-shadow: 0 0 10px var(--primary-color);
+  }
 }
 /* Navbar */
 nav{
@@ -132,8 +163,8 @@ section div{
     transition:var(--transition);
 }
 #about img{
-    width: 700px;
-    height: 700px;
+    width: 900px;
+    height: 720px;
     transition:var(--transition);
 }
 
@@ -158,11 +189,23 @@ section div{
     display: block;
     width: 0;
     height: 4px;
-    width: 100%;
+    width: 0;
     background: var(--primary-color);
     transition:var(--transition);
+    animation-name: underLine;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-fill-mode: forwards;
 }
-
+@keyframes underLine{
+  0%{
+      width: 0;
+  }
+  100%{
+      width: 100%;
+  }
+}
 #about h1:hover{
     text-shadow: 0 0 10px var(--primary-color);
 }
