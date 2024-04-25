@@ -38,6 +38,8 @@ header{
     margin: 0;
     font-family: Nunito,sans-serif !important;
     transition:var(--transition);
+    position: sticky;
+    top: 0;
 }
 header:hover{
     background-color: #1f1f1f;
@@ -55,7 +57,7 @@ header:hover{
     transition:var(--transition);
 }
 .logo:hover{
-    color: var(--primary-color);
+
     text-shadow: 0 0 10px var(--primary-color);
 }
 .logo:hover img{
@@ -77,8 +79,6 @@ nav{
     width: 50%;
     justify-content: space-around;
     align-items: center;
-    position: sticky;
-    top: 0;
     z-index: 999;
 }
 
@@ -147,6 +147,7 @@ section div{
 }
 #about h1{
     font-size: 5rem;
+    color: var(--primary-color);
     cursor: pointer;
     font-weight: bold;
     margin-bottom: 20px;
@@ -163,7 +164,6 @@ section div{
 }
 
 #about h1:hover{
-    color: var(--primary-color);
     text-shadow: 0 0 10px var(--primary-color);
 }
 #about p{
