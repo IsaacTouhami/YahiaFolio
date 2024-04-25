@@ -193,10 +193,10 @@ section div{
     background: var(--primary-color);
     transition:var(--transition);
     animation-name: underLine;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
 }
 @keyframes underLine{
   0%{
